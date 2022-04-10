@@ -32,7 +32,7 @@ let preproc = {
 };
 let fileswatch = 'html,htm,txt,json,md,woff2';
 
-const folderProd = './project_start/';
+const folderProd = './Elixiris/';
 
 let path = {
 	dist: {

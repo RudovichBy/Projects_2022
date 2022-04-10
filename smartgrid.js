@@ -3,16 +3,20 @@ module.exports = {
     offset: "30px",
     mobileFirst: true,
     container: {
-        maxWidth: "1400px",
+        maxWidth: "1920px",
         //fields: "1%" //внутренние отступы контейнера Внимание! fields обязан быть >= offset / 2
         fields: "15px" //внутренние отступы контейнера Внимание! fields обязан быть >= offset / 2
     },
     breakPoints: {
+        xxl_full: {
+            width: "1920px",
+
+        },
         xxl: {
             width: "1400px",
         },
         xl: {
-            width: "1170px",
+            width: "1200px",
         },
         lg: {
             width: "992px"
