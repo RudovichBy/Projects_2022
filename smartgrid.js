@@ -1,17 +1,13 @@
 module.exports = {
     columns: 12,
-    offset: "30px",
+    offset: "2rem",
     mobileFirst: true,
     container: {
         maxWidth: "1920px",
         //fields: "1%" //внутренние отступы контейнера Внимание! fields обязан быть >= offset / 2
-        fields: "15px" //внутренние отступы контейнера Внимание! fields обязан быть >= offset / 2
+        fields: "1rem" //внутренние отступы контейнера Внимание! fields обязан быть >= offset / 2
     },
     breakPoints: {
-        xxl_full: {
-            width: "1920px",
-
-        },
         xxl: {
             width: "1400px",
         },
@@ -22,19 +18,13 @@ module.exports = {
             width: "992px"
         },
         md: {
-            width: "768px",
-            offset: "30px",
-            fields: "15px",
+            width: "768px"
         },
         sm: {
-            width: "576px",
-            offset: "20px",
-            fields: "10px",
+            width: "576px"
         },
         xs: {
-            width: "320px",
-            offset: "10px",
-            fields: "5px"
+            width: "320px"
         }
     },
     // mixinNames: {

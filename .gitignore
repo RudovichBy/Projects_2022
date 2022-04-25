@@ -5,5 +5,7 @@
 /**/package-lock.json
 /**/debug.log
 /**/temp/
+/temp/
 /dist 
 /**/dist
+/**/settings.txt
