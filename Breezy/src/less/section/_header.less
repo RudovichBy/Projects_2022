@@ -1,0 +1,203 @@
+
+.wrapper_full {
+    min-height: 100%;
+    height: 100vh;
+    box-shadow: 0 7px 12px 7px rgba(0, 0, 0, .22);
+    border-radius: 10px;
+}
+
+.u_row {
+    .u-row-flex(0);
+    min-height: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.header {
+    transition: @transition;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    background-color: @accent-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+        border-radius: 0 10px 10px 0;
+        z-index: 99;
+    .lg-block( {
+        border-radius: 10px 0 0 10px;
+            position: relative;
+            .u-col(0);
+            .u-size(4, 12, 0rem);
+            min-width: auto;
+            left: 0;
+            // justify-content: center;
+            padding-left: 80px;
+            padding-top: 65px;
+            padding-bottom: 20px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+    );
+    .xxl-block( {
+            .u-size(3, 12, 0rem);
+        }
+
+    );
+}
+
+.header-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 20px 0;
+    order: 1;
+    .lg(order, 2);
+}
+
+.header-main_photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+
+    .lg-block( {
+            width: 180px;
+            height: 180px;
+        }
+
+    )
+}
+
+.header-main_photo::after {
+    position: absolute;
+    opacity: .3;
+    top: 5%;
+    left: 5%;
+    border-radius: 100%;
+    content: '';
+    height: 100%;
+    width: 100%;
+    // background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+    // background-image: -moz-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+    // background-image: -ms-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+    background-image: radial-gradient(ellipse  100% 100% , #fff, #fff 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    z-index: -1;
+}
+
+.header-main_photo img {
+    max-width: 100%;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 100%;
+}
+
+.header-main_title h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1;
+    font-size: 1.8rem;
+    .lg(font-size, 2.25rem)
+}
+
+.header-main_title h4 {
+    margin: 0;
+    line-height: 1;
+    font-size: 1rem;
+    .lg(font-size, 1.125rem)
+}
+
+.header-social {
+    width: 100%;
+    padding: 20px 0;
+    order: 2;
+    .lg(order, 3);
+
+}
+
+.header-social ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-social ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-social ul li a {
+    text-decoration: none;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: @transition;
+    align-items: center;
+}
+
+.header-social ul li a svg {
+    width: 100%;
+    max-width: 25px;
+    fill: #fff;
+    transition: @transition;
+}
+
+.header-social ul li a:hover {
+    background-color: #fff;
+}
+
+.header-social ul li a:hover svg {
+    fill: #000;
+}
+
+.header-buttons {
+    width: 100%;
+    padding: 30px 0 20px;
+    text-align: center;
+    order: 3;
+    .lg(order, 4);
+}
+
+.buttons {
+    .button-reset();
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 28px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, .22);
+    transition: @transition;
+}
+
+.buttons:hover {
+    background-color: #fff;
+    color: @accent-color;
+}
+
+.header-copyright {
+    color: #fff;
+    font-size: 13px;
+    margin: auto 10px 10px;
+    order: 5;
+}
+

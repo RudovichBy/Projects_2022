@@ -56,7 +56,18 @@ function styles() {
 		.pipe(eval(preproc.less)())
 		.pipe(gcmq())
 		.pipe(autoprefixer({
-			overrideBrowserslist: ['last 2 years', 'last 10 versions'],
+			overrideBrowserslist: [
+				"last 1 major version",
+				">= 1%",
+				"Chrome >= 45",
+				"Firefox >= 38",
+				"Edge >= 12",
+				"Explorer >= 11",
+				"iOS >= 9",
+				"Safari >= 9",
+				"Android >= 4.4",
+				"Opera >= 30"
+			],
 			grid: true
 		}))
 		.pipe(gulpif(isProd, cleanCSS({
