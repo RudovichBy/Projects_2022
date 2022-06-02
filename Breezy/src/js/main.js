@@ -1,7 +1,9 @@
 // import $ from 'jquery'; window.jQuery = $; window.$ = $;
 // import scrollingicator from './modules/scrollingicator';
-import burgerMenu from './modules/burgerMenu';
 // import Swiper from 'swiper';
+import Swiper from 'swiper';
+
+import burgerMenu from './modules/burgerMenu';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -10,4 +12,20 @@ window.addEventListener('DOMContentLoaded', () => {
 	// scrollingicator();
 	burgerMenu('.header', '.menu-toggle', '.nav-anim');
 
+	let mySwiper = new Swiper('.mySwiper', {
+		loop: true,
+		speed: 800,
+		// autoHeight: true,
+		// autoplay: {
+		// 	delay: 3000,
+		// 	disableOnInteraction: false,
+		// },
+		// pagination: {
+		//     el: '.swiper-pagination',
+		//     clickable: true,
+		// },
+		// direction: "vertical",
+        // slidesPerView: "auto",
+        // freeMode: true,
+	})
 });
