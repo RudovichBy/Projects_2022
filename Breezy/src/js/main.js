@@ -4,7 +4,7 @@
 import Swiper from 'swiper';
 
 import burgerMenu from './modules/burgerMenu';
-
+import accordion from './modules/accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
 	"use strict";
