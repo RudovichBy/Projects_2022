@@ -1,7 +1,8 @@
 // import $ from 'jquery'; window.jQuery = $; window.$ = $;
 // import scrollingicator from './modules/scrollingicator';
 // import Swiper from 'swiper';
-import Swiper from 'swiper';
+// import Swiper, { Navigation, Pagination, Autoplay, Lazy } from 'swiper';
+import Swiper from 'swiper/bundle';
 
 import burgerMenu from './modules/burgerMenu';
 import accordion from './modules/accordion';
@@ -15,6 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	let mySwiper = new Swiper('.mySwiper', {
 		loop: true,
 		speed: 800,
+		hashNavigation: true,
+		slideToClickedSlide: false,
 		// autoHeight: true,
 		// autoplay: {
 		// 	delay: 3000,
@@ -25,7 +28,20 @@ window.addEventListener('DOMContentLoaded', () => {
 		//     clickable: true,
 		// },
 		// direction: "vertical",
-        // slidesPerView: "auto",
-        // freeMode: true,
-	})
+		// slidesPerView: "auto",
+		// freeMode: true,
+	});
+	var swiper3 = new Swiper(".tech-stack-slider", {
+		loop: true,
+		speed: 800,
+		slidesPerView: "auto",
+		spaceBetween: 20,
+		grabCursor: true,
+		nested: true,
+		autoplay: {
+			delay: 1000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+	});
 });

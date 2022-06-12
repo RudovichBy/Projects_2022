@@ -15,7 +15,7 @@ for (let i = 0; i < accordion.length; i++) {
             this.classList.remove('accordion_open');
         } else {
             for (let x = 0; x < accordion.length; x++) {
-                accordion[x].classList.remove('accordion_open')
+                accordion[x].classList.remove('accordion_open');
                 accordion[x].nextElementSibling.style.maxHeight = null;
 
             }
