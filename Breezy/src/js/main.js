@@ -6,6 +6,7 @@ import Swiper from 'swiper/bundle';
 
 import burgerMenu from './modules/burgerMenu';
 import accordion from './modules/accordion';
+import filter from './modules/filter';
 
 window.addEventListener('DOMContentLoaded', () => {
 	"use strict";

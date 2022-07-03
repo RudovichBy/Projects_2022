@@ -47,6 +47,14 @@
     margin-right: 10px;
     color: @accent-color;
 }
+.about-me_content-right li>a {
+    color: @text-color-dark;
+    text-decoration: none;
+    transition: @transition;
+}
+.about-me_content-right li>a:hover {
+    color: @accent-color;
+}
 
 .what-do {
     justify-content: center;
@@ -215,14 +223,14 @@
         padding: 30px;
     });
     .lg-block({
-        .size(6);
-    });
-    .xl-block({
         .size(5);
     });
-    .xxl-block({
+    .xl-block({
         .size(4);
     });
+    // .xxl-block({
+    //     .size(4);
+    // });
 }
 
 .pricing_item:hover {
