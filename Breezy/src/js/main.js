@@ -19,6 +19,10 @@ window.addEventListener('DOMContentLoaded', () => {
 		speed: 800,
 		hashNavigation: true,
 		slideToClickedSlide: false,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
 		// autoHeight: true,
 		// autoplay: {
 		// 	delay: 3000,
