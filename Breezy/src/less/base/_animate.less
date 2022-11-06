@@ -60,3 +60,46 @@
 		opacity: 1
 	}
 }
+
+
+
+.anim-target {
+	display: none;
+}
+
+.fade-enter {
+	visibility: hidden;
+}
+
+.fade-enter-active {
+	animation: someIn 0.5s linear;
+}
+
+.fade-leave-active {
+	animation: someOut 0.5s linear forwards;
+}
+
+
+@keyframes someIn {
+	from {
+		transform: translateX(50px) scale(0.8);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0px) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes someOut {
+	from {
+		transform: translateX(0px) scale(1);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateX(50px) scale(0.8);
+		opacity: 0;
+	}
+}

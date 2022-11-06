@@ -1,5 +1,6 @@
 {
 	//**************************фильтр**************************	
+	// console.log(DLAnimate);
 	const filter = () => {
 		const menu = document.querySelector('.filters'),
 			items = menu.querySelectorAll('.filters-item'),
@@ -21,21 +22,21 @@
 		const typeFilter = (markType) => {
 			markAll.forEach(mark => {
 				mark.style.display = 'none';
-				mark.classList.remove('animated', 'fadeIn');
+				// mark.classList.remove('animated', 'fadeIn');
 			});
-
-			// no.style.display = 'none';
-			// no.classList.remove('animated', 'fadeIn');
 
 			if (markType) {
 				markType.forEach(mark => {
-					mark.style.display = 'block';
-					mark.classList.add('animated', 'fadeIn');
+					DLAnimate.show(mark, {
+						name: 'fade',
+						track: 'animation'
+					});
 				});
-			} else {
-				no.style.display = 'block';
-				no.classList.add('animated', 'fadeIn');
 			}
+			// else {
+			// 	no.style.display = 'block';
+			// 	no.classList.add('animated', 'fadeIn');
+			// }
 		};
 
 		btnAll.addEventListener('click', () => {

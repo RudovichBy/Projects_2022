@@ -3,18 +3,18 @@
 // import Swiper from 'swiper';
 // import Swiper, { Navigation, Pagination, Autoplay, Lazy } from 'swiper';
 import Swiper from 'swiper/bundle';
-
+import DLAnimate from 'dl-animate/dist/dl-animate';
 import burgerMenu from './modules/burgerMenu';
+import navigationSliders from './modules/navigationSliders';
 import accordion from './modules/accordion';
 import filter from './modules/filter';
 
 window.addEventListener('DOMContentLoaded', () => {
 	"use strict";
-	console.log('test')
 	// scrollingicator();
 	burgerMenu('.header', '.menu-toggle', '.nav-anim');
 
-	let mySwiper = new Swiper('.mySwiper', {
+	const mySwiper = new Swiper('.mySwiper', {
 		loop: true,
 		speed: 800,
 		hashNavigation: true,
@@ -23,20 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		  },
-		// autoHeight: true,
-		// autoplay: {
-		// 	delay: 3000,
-		// 	disableOnInteraction: false,
-		// },
-		// pagination: {
-		//     el: '.swiper-pagination',
-		//     clickable: true,
-		// },
-		// direction: "vertical",
-		// slidesPerView: "auto",
-		// freeMode: true,
 	});
-	var swiper3 = new Swiper(".tech-stack-slider", {
+	const swiper3 = new Swiper(".tech-stack-slider", {
 		loop: true,
 		speed: 800,
 		slidesPerView: "auto",
